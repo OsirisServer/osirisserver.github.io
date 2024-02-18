@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Electrolize&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  animation: changeBackground 1s steps(1) infinite;
+}
+
+.noto-sans jp-<uniquifier> {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+@keyframes changeBackground {
+  0% { background-color: red; }
+  5% { background-color: orange; }
+  10% { background-color: yellow; }
+    15% { background-color: green; }
+    20% { background-color: blue; }
+    25% { background-color: indigo; }
+    30% { background-color: violet; }
+    35% { background-color: red; }
+    40% { background-color: orange; }
+    45% { background-color: yellow; }
+    50% { background-color: green; }
+    55% { background-color: blue; }
+    60% { background-color: indigo; }
+    65% { background-color: violet; }
+    70% { background-color: red; }
+    75% { background-color: orange; }
+    80% { background-color: yellow; }
+    85% { background-color: green; }
+    90% { background-color: blue; }
+    95% { background-color: indigo; }
+    100% { background-color: red; }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  transform-origin: center;
+    font-size: 100px;
+}
+
+h1 {
+  font-family: 'Noto Sans JP', cursive;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="spin">くそがき<br>おちびちゃん</h1>
+
+
+<audio controls>
+    <source src="./nyancat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
